@@ -1,84 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>To-Do List</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOULI FITNESS CENTRE - </title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .container {
-            margin: 0 auto;
-            width: 50%;
-        }
-        h1 {
-            text-align: center;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        li:not(:last-child) {
-            margin-bottom: 10px;
-        }
-        label {
-            display: inline-block;
-            margin-right: 10px;
-            vertical-align: middle;
-        }
-        input[type="text"] {
-            padding: 5px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            font-size: 16px;
-        }
-        button {
-            padding: 5px 15px;
-            border-radius: 5px;
-            border: none;
-            background-color: #4CAF50;
-            color: white;
-            font-size: 16px;
-        }
-        button:hover {
-            background-color: #3E8E41;
-        }
+      body {
+    font-family: Arial, sans-serif;
+    background-color: #E0FFFF ;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color:#F7CAC9;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+section {
+    padding: 50px 20px;
+    
+}
+p {
+
+  text-align:center;
+}
+
+section h2 {
+    text-align: center;
+}
+
+.item {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.item img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #B0E0E6;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>To-Do List</h1>
-        <form>
-            <label for="task">New task:</label>
-            <input type="text" id="task" name="task" placeholder="Enter task">
-            <button type="button" onclick="addTask()">Add</button>
-        </form>
-        <ul id="task-list">
+    <header>
+        <h1>MOULI FITNESS CENTRE</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">branches</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        </ul>
+    <section id="about">
+        <h2>About fitness gym</h2>
+        <p>.</p>
+    </section>
+
+    <section id="menu">
+        <h2>Locations</h2>
+        <div class="item">
+            <img src="C:\Users\MOULI\Desktop\gym\e2.jpeg"alt="Item 1">
+            <h3>MOULI FITNESS CENTRE - GAJUWAKA</h3>
+            <p>it is high class gym with ac, and steem bath.</p>
+        </div>
+        <div class="item">
+            <img src="C:\Users\MOULI\Desktop\gym\e3.jpeg" alt="Item 2">
+            <h3>MOULI FITNESS CENTRE - KURMANPALEM</h3>
+            <p>it is also a perfect centre for your body maintainence.</p>
+        </div>
+        <!-- Add more items here -->
+<div class="item">    </section>
+    <div style="background-color:#FFFACD;">
+    <section id="contact" >
+        <h2>Contact Us</h2>
+        <p>For any queries,reach out to us at:</p>
+        <p>Email: mouli.sai1430@gmail.com</p>
+        <p>Phone: +919347769682 </p>
+    </section>
     </div>
-    <script>
-        function addTask() {
-            // Get the input field and value
-            var taskInput = document.getElementById("task");
-            var taskValue = taskInput.value;
-
-            // Create a new list item and check box
-            var li = document.createElement("li");
-            var checkbox = document.createElement("input");
-            checkbox.type = "checkbox";
-            li.appendChild(checkbox);
-
-            // Add the task text to the list item
-            var textNode = document.createTextNode(taskValue);
-            li.appendChild(textNode);
-
-            // Add the list item to the task list
-            var ul = document.getElementById("task-list");
-            ul.appendChild(li);
-
-            // Clear the input field
-            taskInput.value = "";
-        }
-    </script>
+    <footer>
+        <p>&copy; 2024 MOULI FITNESS CENTER. All rights reserved.</p>
+    </footer>
 </body>
 </html>
